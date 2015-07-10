@@ -7,7 +7,6 @@
 #import <BlocksKit/UIView+BlocksKit.h>
 #import "ASPButton.h"
 #import "UIColor+RGB.h"
-#import "ASPInterfaceProvider.h"
 
 @implementation ASPButton
 - (id) init
@@ -58,8 +57,8 @@
 
 - (void) setEnabled:(BOOL)enabled
 {
-	self.backgroundColor        = enabled ? [UIColor colorWithRGB255Red:255 green:222 blue:146] : [ASPInterfaceProvider lightGreyColor];
-	self.label.textColor        = enabled ? [UIColor colorWithRGB255Red:158 green:41 blue:0] : [ASPInterfaceProvider separatorColor];
+	self.backgroundColor        = enabled ? [UIColor colorWithRGB255Red:255 green:222 blue:146] : [UIColor grayColor];
+	self.label.textColor        = enabled ? [UIColor colorWithRGB255Red:158 green:41 blue:0] : [UIColor darkGrayColor];
 	self.userInteractionEnabled = enabled;
 	_enabled = enabled;
 }
