@@ -8,9 +8,7 @@
 #import <KeepLayout/KeepAttribute.h>
 #import <KeepLayout/UIViewController+KeepLayout.h>
 #import "DRTViewController.h"
-#import "DrLogger.h"
 #import "ASPLayoutView.h"
-#import "DRTInAppManager.h"
 
 @implementation DRTViewController
 {
@@ -43,15 +41,15 @@
 	[super viewDidAppear:animated];
 
 	_openedTime = [NSDate new];
-	[DrLogger logEvent:[NSString stringWithFormat:@"%@%@", NSStringFromClass([self class]), EVENT_DID_APPEAR]
-			 withParameters:self.controllerLoggingParams];
+//	[DrLogger logEvent:[NSString stringWithFormat:@"%@%@", NSStringFromClass([self class]), EVENT_DID_APPEAR]
+//			 withParameters:self.controllerLoggingParams];
 }
 
 - (void) viewDidDisappear:(BOOL)animated
 {
 	[super viewDidDisappear:animated];
 
-	[DrLogger logEvent:[NSString stringWithFormat:@"%@%@", NSStringFromClass([self class]), EVENT_DID_DISAPPEAR] withParameters:self.controllerLoggingParams];
+//	[DrLogger logEvent:[NSString stringWithFormat:@"%@%@", NSStringFromClass([self class]), EVENT_DID_DISAPPEAR] withParameters:self.controllerLoggingParams];
 }
 
 - (NSDictionary *) controllerLoggingParams
@@ -61,7 +59,7 @@
 			@"Controller" : NSStringFromClass([self class]),
 			@"TimeSpentBeforeEvent" : @([NSDate new].timeIntervalSince1970 - _openedTime.timeIntervalSince1970),
 			@"CameFrom" : vcs.count > 1 ? NSStringFromClass([vcs[vcs.count-2] class]) : @"Root or no navigation controller",
-			@"isPremium" : @([[DRTInAppManager sharedManager] isPremium])
+//			@"isPremium" : @([[DRTInAppManager sharedManager] isPremium])
 	};
 }
 
@@ -69,13 +67,13 @@
 {
 	NSMutableDictionary *dictionary = [self.controllerLoggingParams mutableCopy];
 	[dictionary addEntriesFromDictionary:params];
-	[DrLogger logEvent:event withParameters:dictionary];
+//	[DrLogger logEvent:event withParameters:dictionary];
 }
 
 - (void) logAndSendEvent:(NSString *)event params:(NSDictionary *)params
 {
 	NSMutableDictionary *dictionary = [self.controllerLoggingParams mutableCopy];
 	[dictionary addEntriesFromDictionary:params];
-	[DrLogger logAndSendEvent:event withParameters:dictionary];
+//	[DrLogger logAndSendEvent:event withParameters:dictionary];
 }
 @end
