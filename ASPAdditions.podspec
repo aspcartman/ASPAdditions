@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "5.0"
 
 
-  s.source       = { :git => "http://github.com/aspcartman/ASPAdditions.git", :tag => "0.0.1" }
+  s.source       = { :git => "http://github.com/aspcartman/ASPAdditions.git" }
 
 
   s.source_files  = "*.{h,m}", "**/*.{h,m}"
