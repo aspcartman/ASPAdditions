@@ -5,6 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (DRTHelper)
+@interface NSDictionary (ASPHelper)
 - (NSDictionary *) dictionaryByAddingKeysAndValuesFromDictionary:(NSDictionary *)dict;
 @end

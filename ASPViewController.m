@@ -10,7 +10,7 @@
 #import "DRTViewController.h"
 #import "ASPLayoutView.h"
 
-@implementation DRTViewController
+@implementation ASPViewController
 {
 	NSDate *_openedTime;
 }

@@ -4,11 +4,11 @@
 //
 
 #import <objc/runtime.h>
-#import "NSDictionary+DRTInverse.h"
+#import "NSDictionary+ASPInverse.h"
 
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "OCLegacyObjCLiteralInspection"
-@implementation NSDictionary (DRTInverse)
+@implementation NSDictionary (ASPInverse)
 - (NSDictionary *) inverse
 {
 	id inverse = objc_getAssociatedObject(self, @selector(inverse));

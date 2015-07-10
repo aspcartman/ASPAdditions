@@ -5,6 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (DRTInverse)
+@interface NSDictionary (ASPInverse)
 - (NSDictionary *) inverse;
 @end

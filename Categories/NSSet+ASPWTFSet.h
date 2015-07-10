@@ -5,6 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSSet (DRTWTFSet)
+@interface NSSet (ASPWTFSet)
 - (NSSet *) setByRemovingObject:(id)object;
 @end

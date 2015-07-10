@@ -7,7 +7,7 @@
 
 @class ASPLayoutView;
 
-@interface DRTViewController : UIViewController
+@interface ASPViewController : UIViewController
 {
 @protected
 	UIView *_mainView;

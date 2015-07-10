@@ -3,9 +3,9 @@
 // Copyright (c) 2015 ASPCartman. All rights reserved.
 //
 
-#import "NSDictionary+DRTHelper.h"
+#import "NSDictionary+ASPHelper.h"
 
-@implementation NSDictionary (DRTHelper)
+@implementation NSDictionary (ASPHelper)
 - (NSDictionary *) dictionaryByAddingKeysAndValuesFromDictionary:(NSDictionary*)dict
 {
 	NSMutableDictionary *d = [self mutableCopy];

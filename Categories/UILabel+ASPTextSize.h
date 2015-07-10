@@ -5,6 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UILabel (DRTTextSize)
-@property (nonatomic, assign) CGFloat DRT_textSize;
+@interface UILabel (ASPTextSize)
+@property (nonatomic, assign) CGFloat ASP_textSize;
 @end

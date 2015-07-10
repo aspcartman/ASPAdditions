@@ -3,9 +3,9 @@
 // Copyright (c) 2015 ASPCartman. All rights reserved.
 //
 
-#import "NSSet+DRTWTFSet.h"
+#import "NSSet+ASPWTFSet.h"
 
-@implementation NSSet (DRTWTFSet)
+@implementation NSSet (ASPWTFSet)
 - (NSSet*)setByRemovingObject:(id)object
 {
 	NSMutableSet *set = [self mutableCopy];
