@@ -3,7 +3,7 @@
 // Copyright (c) 2014 ASPCartman. All rights reserved.
 //
 
-#import <SWRevealViewController/SWRevealViewController.h>
+//#import <SWRevealViewController/SWRevealViewController.h>
 #import "UIWindow+CurrentViewController.h"
 
 @implementation UIWindow (CurrentViewController)
@@ -23,10 +23,10 @@
 	{
 		return [self getVisibleViewControllerFrom:[((UITabBarController *) vc) selectedViewController]];
 	}
-		else if ([vc isKindOfClass:[SWRevealViewController class]])
-	{
-		return [self getVisibleViewControllerFrom:[((SWRevealViewController *)vc) frontViewController]];
-	}
+//		else if ([vc isKindOfClass:[SWRevealViewController class]])
+//	{
+//		return [self getVisibleViewControllerFrom:[((SWRevealViewController *)vc) frontViewController]];
+//	}
 	else
 	{
 		if (vc.presentedViewController)
