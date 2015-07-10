@@ -27,6 +27,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency 'KeepLayout', :git => "https://github.com/iMartinKiss/KeepLayout.git"
+  s.dependency 'BlocksKit', :git => 'https://github.com/zwaldowski/BlocksKit.git'
 
 end
