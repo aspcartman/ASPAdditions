@@ -3,7 +3,7 @@
 // Copyright (c) 2014 ASPCartman. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface UIColor (RGB)
 + (UIColor *) colorWith255Gray:(NSUInteger)gray;

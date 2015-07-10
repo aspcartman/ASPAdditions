@@ -3,7 +3,7 @@
 // Copyright (c) 2013 ASPCartman. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSString (Contains)
 - (BOOL) contains:(NSString *)string;

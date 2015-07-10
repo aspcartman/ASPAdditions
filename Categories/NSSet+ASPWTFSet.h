@@ -3,7 +3,7 @@
 // Copyright (c) 2015 ASPCartman. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface NSSet (ASPWTFSet)
 - (NSSet *) setByRemovingObject:(id)object;

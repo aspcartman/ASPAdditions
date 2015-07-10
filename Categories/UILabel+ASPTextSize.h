@@ -3,7 +3,7 @@
 // Copyright (c) 2014 ASPCartman. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface UILabel (ASPTextSize)
 @property (nonatomic, assign) CGFloat ASP_textSize;
