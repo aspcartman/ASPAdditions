@@ -7,5 +7,8 @@
 
 
 @interface ASPTextField : UIView
+{
+	UIView *_separator;
+}
 @property (nonatomic, weak, readonly) UITextField *field;
 @end

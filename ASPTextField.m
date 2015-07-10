@@ -22,7 +22,6 @@
 		field.keepHeight.equal = 30;
 		field.keepWidth.min        = 100;
 		field.keepBottomInset.equal = 5;
-
 		_field = field;
 
 		UIView *separator = [UIView new];
@@ -31,6 +30,7 @@
 		separator.keepHorizontalInsets.equal = 0;
 		separator.keepBottomInset.equal      = 0;
 		separator.keepHeight.equal           = 1;
+		_separator = separator;
 
 	}
 	return self;
