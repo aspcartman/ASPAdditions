@@ -15,7 +15,7 @@
 	if (self)
 	{
 		self.translatesAutoresizingMaskIntoConstraints = NO;
-		self.layer.cornerRadius                        = 18;
+		self.layer.cornerRadius                        = 10;
 		self.layer.masksToBounds                       = YES;
 
 		UILabel *label = [UILabel new];
@@ -56,8 +56,8 @@
 
 - (void) setEnabled:(BOOL)enabled
 {
-	self.backgroundColor        = enabled ? [UIColor colorWithRGB255Red:255 green:222 blue:146] : [UIColor grayColor];
-	self.label.textColor        = enabled ? [UIColor colorWithRGB255Red:158 green:41 blue:0] : [UIColor darkGrayColor];
+	self.backgroundColor        = enabled ? [UIColor lightGrayColor] : [UIColor grayColor];
+	self.label.textColor        = enabled ? [UIColor blackColor] : [UIColor darkGrayColor];
 	self.userInteractionEnabled = enabled;
 	_enabled = enabled;
 }
