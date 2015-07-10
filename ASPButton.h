@@ -3,7 +3,7 @@
 // Copyright (c) 2014 ASPCartman. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface ASPButton : UIView
 @property (nonatomic, strong) UILabel *label;
