@@ -3,7 +3,6 @@
 // Copyright (c) 2014 ASPCartman. All rights reserved.
 //
 
-#import "ASPInterfaceProvider.h"
 #import "KeepLayout.h"
 #import "ASPTextField.h"
 
@@ -17,11 +16,9 @@
 	{
 		UITextField *field = [UITextField new];
 		field.text = nil;
-		field.font      = [UIFont fontWithName:@"HelveticaNeue-Light" size:20];
-		field.textColor = [ASPInterfaceProvider textColor];
 		field.contentVerticalAlignment = UIControlContentVerticalAlignmentBottom;
 		[self addSubview:field];
-		field.keepHorizontalInsets.equal = 0;
+		field.keepInsets.equal = 0;
 		field.keepHeight.equal = 30;
 		field.keepWidth.min        = 100;
 		field.keepBottomInset.equal = 5;
@@ -29,7 +26,7 @@
 		_field = field;
 
 		UIView *separator = [UIView new];
-		separator.backgroundColor = [ASPInterfaceProvider separatorColor];
+		separator.backgroundColor = [UIColor grayColor];
 		[self addSubview:separator];
 		separator.keepHorizontalInsets.equal = 0;
 		separator.keepBottomInset.equal      = 0;
@@ -39,9 +36,5 @@
 	return self;
 }
 
-- (CGSize) intrinsicContentSize
-{
-	return CGSizeMake([ASPInterfaceProvider screenSize].width, 44);
-}
 
 @end

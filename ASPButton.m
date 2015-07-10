@@ -20,7 +20,6 @@
 
 		UILabel *label = [UILabel new];
 		label.backgroundColor = [UIColor clearColor];
-		label.font            = [UIFont fontWithName:@"Helvetica-Light" size:16];
 		[self addSubview:label];
 		[label keepCentered];
 		label.keepVerticalInsets.equal   = 5;
